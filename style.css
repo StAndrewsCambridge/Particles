@@ -1,0 +1,225 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color:#0a446c;
+}
+
+/* index.html */
+
+.header-footer {
+  background-color:#0F5E8E;
+  color: #fff;
+  height: 5%;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+}
+
+
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  
+}
+
+#welcome-section {
+  color: #DAEEF4;
+  padding: 7.5% 20% 0 20%;
+  height: 60%;
+  font-size: larger;
+
+}
+
+#developer-section {
+  color: #DAEEF4;
+  background-color:#296a9b;
+  height: 40%;
+  padding: 2.5% 20% 0% 20%;
+  font-size: larger;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+button:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+section {
+  text-align: center;
+}
+
+
+#reference-section {
+  color: #DAEEF4;
+  background-color:#39729e;
+  padding: 7.5% 20% 0 20%;
+  height: 75%;
+  font-size: larger;
+
+}
+
+#thank-you-section {
+  color: #DAEEF4;
+  padding: 5% 0 5% 0;
+  height: 15%;
+  font-size: larger;
+}
+
+a {
+  color: rgb(151, 192, 231); 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(76, 162, 242);
+}
+
+#last-section {
+  
+  margin-bottom: 2.5%;
+  height: 300px;
+  display: flex;
+  text-align: center; /* Align items vertically centered */
+}
+
+
+
+
+.Separators {
+  width: 95%;
+  color:  #DAEEF4;
+  margin-top: 2.5%;
+
+  
+}
+
+canvas {
+  display: block;
+}
+
+.sliders {
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+
+  appearance: none;
+  outline: none;
+  width: 35%;
+  height: 15px;
+  background: #304866;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+.sliders_simulation {
+  width: 80px;
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+
+  appearance: none;
+  outline: none;
+  width: 50%;
+  height: 15px;
+  background: #daeef480;
+  border-radius: 3px;
+  opacity: 0.1;
+}
+.sliders:hover {
+  opacity: 1;
+}
+.sliders_simulation:hover {
+  opacity: 0.7;
+}
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.sliders::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #297a74;
+  cursor: pointer;
+  border-radius: 3px;
+  
+}
+.sliders_simulation::-webkit-slider-thumb {
+  opacity: 1;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #DAEEF4;
+  cursor: pointer;
+  border-radius: 3px;
+  
+}
+
+
+.text_elements {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10;
+  color: #DAEEF4;
+}
+
+
+.law {
+  height: 500px;
+  
+  background-color: #0a446c;
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  
+  
+}
+
+#law-text {
+  font-style: normal;
+  font-weight: normal;
+  color: #DAEEF4;
+  padding: 0 2.5%;
+}
+.law span {
+  margin-right: 0px;
+}
+
+#introduction-section {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+}
+

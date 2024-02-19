@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ideal Gas Simulation</title>
+    <script src="p5.js"></script> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+</head>
+<body>
+    <header class="header-footer">
+        <nav>
+            <button onclick="window.location.href='index.html'" id="btn-home">Home</button>
+            <button onclick="window.location.href='simulation.html'" id="btn-simulation">Simulation</button>
+            <button onclick="window.location.href='laws.html'" id="btn-laws">Gas Laws</button>
+            <button id="btn-link-4">Link 4</button>
+        </nav>
+    </header>
+    
+    <section id="introduction-section" class="law">
+        <div id="law-text">
+            <h1>Introduction</h1>
+            <p>Created in the early 17th century, the gas laws have been around to assist 
+                scientists in finding volumes, amount, pressures and temperature when coming 
+                to matters of gas. The gas laws consist of three primary laws: Charles' Law, 
+                Boyle's Law and Avogadro's Law (all of which will later combine into the General 
+                Gas Equation and Ideal Gas Law).</p>
+            <p>The three fundamental gas laws discover the relationship of pressure, 
+                temperature, volume and amount of gas. Boyle's Law tells us that the volume 
+                of gas increases as the pressure decreases. Charles' Law tells us that the 
+                volume of gas increases as the temperature increases. And Avogadro's Law tell 
+                us that the volume of gas increases as the amount of gas increases. The ideal 
+                gas law is the combination of the three simple gas laws. </p>
+        </div>
+    </section>
+
+    <hr class="Separators">
+
+    <section class="law">
+        <div id="law-text">
+            <h2>Boyle's Law</h2>
+            <p>In 1662, Robert Boyle discovered the correlation between Pressure 
+                (P)and Volume (V) (assuming Temperature(T) and Amount of Gas(n) remain constant):</p>
+
+            <h4>P∝1/V → PV=x</h4>
+
+            <p> where x is a constant depending on amount of gas at a given temperature.
+                Pressure is inversely proportional to Volume, which can be seen in the graph 
+                of pressure against volume. Please drag the slider to see the graph appear.</p>
+        </div>
+        <span id="boyle">
+            <script src="boyle.js"></script>
+        </span>
+    </section>
+
+    <hr class="Separators">
+
+    <section class="law">
+        <div id="amonton">
+            <script src="amonton.js"></script>
+        </div>
+        <span id="law-text">
+            <h2>Amonton's Law</h2>
+            <p>
+                In 1787, French physicists Jacques Charles, discovered the correlation between 
+                Temperature(T) and Volume(V) (assuming Pressure (P) and Amount of Gas(n) remain 
+                constant):</p>
+            <h4> V∝T→V=yT </h4>
+            <p>where y is a constant depending on amount of gas and pressure. 
+                Volume is directly proportional to Temperature. This relationship 
+                can be seen from the graph of volume against temperature. </p>
+        </span>
+    </section>
+    
+    <hr class="Separators">
+    
+    <section class="law">
+        
+        <span id="law-text">
+            <h2>Charles's Law</h2>
+            <p>
+                In 1787, French physicists Jacques Charles, discovered the correlation 
+                between Temperature(T) and Volume(V) (assuming Pressure (P) and Amount 
+                of Gas(n) remain constant):
+            </p>
+            <h4> V∝T→V=yT </h4>
+            <p> where y is a constant depending on amount of gas and pressure. 
+                Volume is directly proportional to Temperature. This relationship 
+                can be noticed by observing the graph of volume against temperature. 
+            </p>
+        </span>
+        <div id="charles">
+            <script src="charles.js"></script>
+        </div>
+
+    </section>
+
+    <hr class="Separators">
+    
+    <section id="last-section" class = "law">
+        <div id="law-text">
+            <h2> Conclusion</h2>
+            <p> 
+                The ideal gas law is the combination of the three simple gas laws. 
+                By setting all three laws directly or inversely proportional to Volume, you get:
+            </p>        
+
+            <h4> V∝nTP </h4>
+            <p>
+                Next replacing the directly proportional to sign with a constant(R) you get:
+            </p>
+            <h4>V=RnTP</h4>
+            <p>
+                And finally get the equation:
+            </p>
+            
+        <!-- ref: https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Physical_Properties_of_Matter/States_of_Matter/Properties_of_Gases/Gas_Laws/Gas_Laws_-_Overview -->
+
+        </div>
+        <span id="law-text">
+            <h2>
+                PV=nRT
+            </h2>
+            <h3>P is the absolute pressure of ideal gas</h3>
+            <h3>V is the volume of ideal gas</h3>
+            <h3>n is the amount of gas</h3>
+            <h3>T is the absolute temperature</h3>
+            <h3>R is the gas constant</h3>
+        </span>
+
+
+    </section>
+
+    <footer id="footer" class="header-footer">
+        <img src="college_logo.png" style="height: 100%;">
+      <span style = "flex-grow: 1;">Created by Aleksandre Meskhi</span>
+    </footer>
+
+</body>
+</html>
